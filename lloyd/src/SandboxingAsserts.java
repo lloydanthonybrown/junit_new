@@ -1,4 +1,8 @@
+import org.junit.Test;
+
 import java.util.ArrayList;
+
+import static junit.framework.TestCase.assertEquals;
 
 public class SandboxingAsserts {
 //    1. use each of the asserts statements, exercise each of them.
@@ -16,10 +20,15 @@ public class SandboxingAsserts {
 //    aName = "Ungala";
 
 
+
     public static void main (String[] args){
         ArrayList roommates = new ArrayList(); // Is "public" necessary here?
 
         System.out.println("My ArrayList contents: " + roommates);
+        roommates.add("Damen");
+        assertEquals("Damen",roommates);
+
     }
+
 
 }
