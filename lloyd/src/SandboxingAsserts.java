@@ -19,8 +19,6 @@ public class SandboxingAsserts {
 //// or modified as in the line of code below.
 //    aName = "Ungala";
 
-
-
     public static void main (String[] args){
         ArrayList roommates = new ArrayList(); // Is "public" necessary here?
 

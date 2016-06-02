@@ -1,39 +1,78 @@
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
+
+import java.util.ArrayList;
 import static org.junit.Assert.*;
 
 // Created by Lloyd on 5/26/2016.
 public class junkTest {
     // Testing Different Asserts Statements
+
+    private ArrayList<String> roommateArrayList = new ArrayList<String>();  // Should I make this private, and access it from a constructor
+    private int myFirstNumber = 4;
+    private String aTestString = "bacon";
+    private int[] myNumberedArray = {4,10,12};
+    private int[] mySecondNumberedArray = {5,10,-7};
+    private int[] aTempArray = {4,10,12};
+    private int[] aSecondTempArray = {5,10,-7};
+
+    @Before
+    public void resettingAsserts(){
+        int[] aTempArray = {4,10,12};
+        int[] aSecondTempArray = {5,10,-7};
+        myFirstNumber = 4;
+        aTestString = "bacon";
+        myNumberedArray = aTempArray;
+        mySecondNumberedArray = aSecondTempArray;
+    }
+
     // assertEquals
     @Test
     public void sandboxingAssertEquals() {
         assertEquals(3,3);
     }
 
+    // assertTrue
+    @Test
+    public void sandboxingAssertTrue() { assertTrue(myFirstNumber == 4);}
+
     // assertFalse
     @Test
     public void sandboxingAssertFalse() {
-        assertFalse(1 == 0);
+        assertFalse(myFirstNumber == 3);
     }
 
-//    // assertArrayEquals
-    @Test
-    public void sandboxingAssertArrayEquals() {
-
-        assertArrayEquals(); // Why doesn't it see this as a valid method? How am I supposed to interact with it?
-    }
-
-//    // assertNotNull
+    // assertNotNull
     @Test
     public void sandboxingAssertNotNull() {
-        assertNotNull("Is this null?",);
+        assertNotNull(aTestString);
     }
 
-
+    // assertArrayEquals
+    @Test
+    public void sandboxingAssertArrayEquals() {
+        mySecondNumberedArray = aTempArray;
+        assertArrayEquals(myNumberedArray, mySecondNumberedArray);
+    }
 
     // assertNotSame
+    @Test
+    public void sandboxingAssertNotSame(){
+        assertNotSame(myNumberedArray,mySecondNumberedArray);
+    }
+
     // assertSame
+    @Test
+    public void sandboxingAssertSame(){
+
+        assertSame(myNumberedArray,aTempArray);
+    }
+
     // assertThat
-    // assertTrue
-    // fail
+//    @Test
+//    public void sandboxingAssertThat(){
+////        assertThat(myFirstNumber,);
+//    }
+
 }
