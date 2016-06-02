@@ -1,4 +1,3 @@
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -6,7 +5,7 @@ import java.util.ArrayList;
 import static org.junit.Assert.*;
 
 // Created by Lloyd on 5/26/2016.
-public class junkTest {
+public class JunkTest {
     // Testing Different Asserts Statements
 
     private ArrayList<String> roommateArrayList = new ArrayList<String>();  // Should I make this private, and access it from a constructor
@@ -69,10 +68,26 @@ public class junkTest {
         assertSame(myNumberedArray,aTempArray);
     }
 
-    // assertThat
-//    @Test
-//    public void sandboxingAssertThat(){
-////        assertThat(myFirstNumber,);
-//    }
+    @Test
+    public void throwingTestException(){ // Should this have a different name than my other method in Junk.java?
+
+        Junk myJunkClass = new Junk();
+
+        try{
+            myJunkClass.throwingTestException(true);
+            fail("The exception has been successfully thrown.");
+        }
+        catch (Exception e){
+            System.out.println("True, I threw the exception.");
+        }
+
+        try{
+            myJunkClass.throwingTestException(false);
+            fail("The exception did not throw, sadly.");
+        }
+        catch (Exception e){
+            System.out.println("False, I didn't throw the exception.");
+        }
+    }
 
 }
