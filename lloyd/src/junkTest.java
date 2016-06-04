@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import static org.junit.Assert.*;
 
@@ -90,4 +91,16 @@ public class JunkTest {
         }
     }
 
+    Roommate derek = new Roommate();
+
+    @Test
+    public void testAddFavoriteFood(){
+        derek.addFavoriteFood("bacon");
+        Field theFavoriteFoodField = Roommate.class.getDeclaredField("favoriteFood"); // this added the .reflect library up top. Is that the correct library?
+        theFavoriteFoodField.setAccessible(true);
+        ArrayList<String> myFavoriteFood = (ArrayList<>)theFavoriteFoodField.get(derek); //IllegalAccessException :(
+        assertEquals("bacon", myFavoriteFood);
+        myFavoriteFood = "Damen"; // incompatible types error // I'm definitely approaching this in the wrong way :(
+
+    }
 }
