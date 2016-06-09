@@ -2,13 +2,11 @@
 //          and test (using junit) that it was successfully added to the collection WITHOUT using a Get method.
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Roommate {
     private int age;
     private boolean hasCar;
-    private ArrayList<String> favoriteFoods = new ArrayList<>();
-//    private HashMap<String,String> name_and_favorite_foods;
+    private ArrayList<String> favoriteFood = new ArrayList<>();
 
     public Roommate(){}
 
@@ -19,7 +17,7 @@ public class Roommate {
     }
 
     public void addFavoriteFood(String food){
-        this.favoriteFoods.add(food);
+        this.favoriteFood.add(food);
     }
 
 

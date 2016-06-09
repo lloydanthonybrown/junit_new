@@ -96,11 +96,21 @@ public class JunkTest {
     @Test
     public void testAddFavoriteFood(){
         derek.addFavoriteFood("bacon");
-        Field theFavoriteFoodField = Roommate.class.getDeclaredField("favoriteFood"); // this added the .reflect library up top. Is that the correct library?
-        theFavoriteFoodField.setAccessible(true);
-        ArrayList<String> myFavoriteFood = (ArrayList<>)theFavoriteFoodField.get(derek); //IllegalAccessException :(
-        assertEquals("bacon", myFavoriteFood);
-        myFavoriteFood = "Damen"; // incompatible types error // I'm definitely approaching this in the wrong way :(
+        try{
+            Field theFavoriteFoodField = Roommate.class.getDeclaredField("favoriteFood");
+            theFavoriteFoodField.setAccessible(true);
+            ArrayList<String> myFavoriteFood = (ArrayList<String>)theFavoriteFoodField.get(derek);
+            assertEquals("bacon", myFavoriteFood);
+            // assert that it only has one thing in it, get that first thing and see if it's equal to what I put into it.
+            // assertNotNull first!
+            assertTrue(myFavoriteFood.size()==1);
+            assertEquals("bacon", myFavoriteFood.get(0));
+            // I'm getting an AssertionError here, where it expected :bacon but actual is :[bacon]. What's the difference?
+
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
 
     }
 }
