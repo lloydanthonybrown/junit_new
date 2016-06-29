@@ -11,7 +11,6 @@ public class Roommate {
     public Roommate(){}
 
     public static void main(String[] args){
-        // This is where I'll declare and instantiate a few roommate objects, right?
         Roommate derek = new Roommate();
         derek.age = 27;
     }
