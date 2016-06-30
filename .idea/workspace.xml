@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5254d72-8be9-4797-8f9a-014da4075145" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/production/lloyd/SandboxingAsserts.class" afterPath="$PROJECT_DIR$/production/lloyd/SandboxingAsserts.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/production/lloyd/junkTest.class" afterPath="$PROJECT_DIR$/production/lloyd/junkTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lloyd/src/Roommate.java" afterPath="$PROJECT_DIR$/lloyd/src/Roommate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lloyd/src/SandboxingAsserts.java" afterPath="$PROJECT_DIR$/lloyd/src/SandboxingAsserts.java" />
-    </list>
+    <list default="true" id="a5254d72-8be9-4797-8f9a-014da4075145" name="Default" comment="" />
     <ignored path="junit_new.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -28,7 +22,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SandboxingAsserts.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SandboxingAsserts.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lloyd/src/SandboxingAsserts.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -50,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JunkTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JunkTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lloyd/src/JunkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="104" column="35" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="35" />
+            <state relative-caret-position="265">
+              <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -207,7 +201,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -845,7 +839,7 @@
       <workItem from="1465495425625" duration="758000" />
       <workItem from="1465839473941" duration="2856000" />
       <workItem from="1465923624689" duration="314000" />
-      <workItem from="1467222355387" duration="296000" />
+      <workItem from="1467222355387" duration="765000" />
     </task>
     <servers />
   </component>
@@ -882,7 +876,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32620000" />
+    <option name="totallyTimeSpent" value="33089000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -905,7 +899,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32603937" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32603937" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1421,20 +1415,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lloyd/src/JunkTest.java">
+    <entry file="file://$PROJECT_DIR$/lloyd/src/SandboxingAsserts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="104" column="35" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="35" />
+        <state relative-caret-position="238">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lloyd/src/SandboxingAsserts.java">
+    <entry file="file://$PROJECT_DIR$/lloyd/src/JunkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="265">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
